@@ -63,7 +63,7 @@
             $result = mysqli_query($connection, $query);
             $res = mysqli_fetch_assoc($result);
             
-            if(!$res['reg_no']) echo "CHUDISH";
+            if(!$res['reg_no']) echo "NOTHING FOUND!";
             else {
                 echo "<p>REGISTRATION NUMBER: " . $res['reg_no'] . "</p>";
                 echo "<p>Student Name:  " . $res['std_name'] . "</p>";
